@@ -1,0 +1,2 @@
+cleanData <- function(dir) {
+}
