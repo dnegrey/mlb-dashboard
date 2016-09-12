@@ -13,16 +13,27 @@ dashboardPage(
     # dashboard sidebar
     dashboardSidebar(
         width = 250,
+        # custom css
+        tags$head(
+            tags$link(rel = "stylesheet",
+                      type = "text/css",
+                      href = "sidebar.css")
+        ),
         sidebarMenu(
-            
+            # input widgets
         )
     ),
     
     # dashboard body
     dashboardBody(
-        fluidRow(
-            
+        # custom css
+        tags$head(
+            tags$link(rel = "stylesheet",
+                      type = "text/css",
+                      href = "body.css")
         )
+        # fluid row, htmltools calls, etc...
+        # output objects
     )
     
 )
