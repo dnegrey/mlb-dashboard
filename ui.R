@@ -2,7 +2,7 @@ dashboardPage(
     
     # page attributes
     title = "MLB Dashboard",
-    skin = "black",
+    skin = "red",
     
     # dashboard header
     dashboardHeader(
