@@ -11,4 +11,14 @@ analyzeData <- function(dir) {
         )
     )
     
+    # main app object
+    RDataCreate(
+        dir = dir,
+        x = "main",
+        fun = list,
+        args = list(
+            results = RDataUse(dir, "results")
+        )
+    )
+    
 }

@@ -6,4 +6,4 @@ suppressMessages(library(spork))
 
 sourceFunctions("R/app")
 
-# load("pub/main.RData")
+load("pub/main.RData")
