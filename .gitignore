@@ -7,3 +7,4 @@ data/*
 !data/README.md
 pub/*
 !pub/README.md
+!pub/main.RData
