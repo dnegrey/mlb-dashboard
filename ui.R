@@ -2,7 +2,7 @@ dashboardPage(
     
     # page attributes
     title = "MLB Dashboard",
-    skin = "red",
+    skin = "blue",
     
     # dashboard header
     dashboardHeader(
@@ -19,8 +19,10 @@ dashboardPage(
                       type = "text/css",
                       href = "sidebar.css")
         ),
+        # sidebar menu
         sidebarMenu(
-            # input widgets
+            menuItem("Home", tabName = "home", icon = icon("home")),
+            menuItem("Results by Year", tabName = "resultsYear", icon = icon("flag"))
         )
     ),
     
@@ -31,9 +33,21 @@ dashboardPage(
             tags$link(rel = "stylesheet",
                       type = "text/css",
                       href = "body.css")
-        )
+        ),
         # fluid row, htmltools calls, etc...
-        # output objects
+        # tab items
+        tabItems(
+            tabItem(
+                tabName = "home",
+                h2(strong(icon("home"), "Home")),
+                contentHome()
+            ),
+            tabItem(
+                tabName = "resultsYear",
+                h2(strong(icon("flag"), "Results by Year")),
+                contentResults()
+            )
+        )
     )
     
 )
