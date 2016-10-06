@@ -4,12 +4,10 @@ getData <- function(dir) {
     RDataCreate(
         dir = dir,
         x = "teams",
-        fun = function(x) {
-            filter(x, yearID >= 1903 & lgID %in% c("AL", "NL"))
+        fun = function() {
+            filter(Teams, yearID >= 1903 & lgID %in% c("AL", "NL"))
         },
-        args = list(
-            x = Teams
-        )
+        args = list()
     )
     
 }

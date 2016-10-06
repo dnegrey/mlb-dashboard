@@ -1,13 +1,9 @@
 leagueResults <- function(x) {
-    UseMethod("leagueResults")
-}
-
-leagueResults.divsNA <- function(x) {
+    x$divID <- ifelse(is.na(x$divID), x$lgID, x$divID)
     y <- split(x, x$lgID)
-    z <- list()
-    z$AL <- list()
-    z$AL$AL <- standings(y$AL)
-    z$NL <- list()
-    z$NL$NL <- standings(y$NL)
+    y <- lapply(y, function(x){split(x, x$divID)})
+    z <- lapply(y, function(x){
+        lapply(x, standings)
+    })
     return(z)
 }
