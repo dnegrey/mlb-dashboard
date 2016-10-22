@@ -46,5 +46,43 @@ leagueResultsDT <- function(results) {
             })
         }
     )
+    # division labels
+    for (i in 1:length(x)) {
+        for (j in 1:length(x[[i]])) {
+            k <- names(x[[i]])[j]
+            names(x[[i]])[j] <- switch(k, AL = "League", NL = "League",
+                                       E = "East", C = "Central", W = "West")
+            x[[i]][[j]][1, 2] <- gsub("Team",
+                                      trimws(paste(names(x)[i], 
+                                                   ifelse(names(x[[i]])[j] == "League",
+                                                          "", names(x[[i]][j])))),
+                                      x[[i]][[j]][1, 2])
+        }
+    }
+    rm(i, j, k)
+    # division order
+    x <- lapply(x, function(x){list(x$League, x$East, x$Central, x$West)})
+    # division stack
+    x <- lapply(x, function(x){do.call(rbind, x)})
+    # remove bottom row
+    x <- lapply(x, function(x){x[1:(nrow(x)-1), ]})
+    # construct datatable
+    x <- lapply(x, function(x){
+        datatable(
+            x,
+            class = c("hover row-border"),
+            escape = FALSE,
+            rownames = FALSE,
+            colnames = rep("", length(x)),
+            options = list(
+                dom = 't',
+                ordering = FALSE,
+                pageLength = 100,
+                columnDefs = list(
+                    list(className = 'dt-center', targets = c(0, 2, 3, 4, 5, 6))
+                )
+            )
+        )
+    })
     return(x)
 }
