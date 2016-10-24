@@ -9,6 +9,7 @@ leagueResultsDT <- function(leagueResults) {
     }
     datatable(
         x,
+        caption = "* Division Winner; ** Wild Card Winner",
         class = c("hover row-border"),
         escape = FALSE,
         rownames = FALSE,

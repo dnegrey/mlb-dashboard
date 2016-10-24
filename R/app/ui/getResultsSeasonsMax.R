@@ -1,0 +1,3 @@
+getResultsSeasonsMax <- function() {
+    max(getResultsSeasons())
+}

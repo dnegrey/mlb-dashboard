@@ -45,7 +45,8 @@ dashboardPage(
             tabItem(
                 tabName = "resultsYear",
                 h2(strong(icon("flag"), "Results by Year")),
-                contentResults()
+                contentResults()[[1]],
+                contentResults()[[2]]
             )
         )
     )
