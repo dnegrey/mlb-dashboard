@@ -8,3 +8,4 @@ data/*
 pub/*
 !pub/README.md
 !pub/main.RData
+rsconnect
