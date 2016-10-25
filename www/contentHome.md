@@ -1,6 +1,6 @@
-Click on a navigation item to begin exploring. Current features:
+Click on an item in the navigation menu to begin exploring. Current features:
 
-* [Results by Year](#shiny-tab-resultsYear): league/division standings, pennant winners and World Series champion by season (1903 - current)
+* **Results by Year**: league/division standings, pennant winners and World Series champion by season (1903 - current)
 
 Source code for application and project [available on GitHub](https://github.com/dnegrey/mlbDashboard).
 
