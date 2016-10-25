@@ -1,0 +1,21 @@
+#resultsWonWS,
+#resultsWonAL,
+#resultsWonNL,
+.leagueResultsDT-header {
+    font-weight: bold;
+}
+#resultsWonWS {
+    color: #F39C12;
+}
+#resultsWonAL,
+#resultsWonNL {
+    color: #DD4B39;
+}
+.resultsStandingsContainer {
+    height: 270px;
+    overflow-y: scroll;
+}
+#resultsStandingsAL thead,
+#resultsStandingsNL thead {
+    display: none;
+}
