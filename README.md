@@ -1,5 +1,5 @@
 # mlbDashboard
 
-*version 0.0.0.9100*
+*version 1.0.0*
 
 Shiny dashboard with Major League Baseball data
