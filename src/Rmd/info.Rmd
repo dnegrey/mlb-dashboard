@@ -1,0 +1,20 @@
+### Information
+
+<h3>Background</h3>
+
+This application is designed to provide insights around Major League Baseball. It leverages data from the [Lahman R package](https://cran.r-project.org/package=Lahman). Special thanks to [Sean Lahman](http://seanlahman.com/) for creating such an amazing baseball database and making it open-source!
+
+<h3>Getting Started</h3>
+
+The [Home](#section-home) page provides final league standings by year.
+
+<h3>Support</h3>
+
+* <span class="fa fa-github-square"></span><a href="https://github.com/dnegrey/mlbDashboard" target="_blank">Source Code</a>
+* <span class="fa fa-envelope"></span><a href="mailto:dnegrey@gmail.com">Email</a>
+
+<br>
+
+----------
+
+<div style="height: 20px;"></div>

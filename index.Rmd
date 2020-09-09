@@ -1,0 +1,39 @@
+---
+title: "Dan Negrey | Shiny - MLB Dashboard"
+output:
+    flexdashboard::flex_dashboard:
+        theme: bootstrap
+        orientation: rows
+        css: www/styles.css
+        logo: www/dan-icon.png
+        favicon: www/dan-icon.png
+runtime: shiny
+---
+
+```{r global, include=FALSE}
+source("src/R/util/sourceFunctions.R")
+sourceFunctions("src/R/util")
+sink(file = "/dev/null")
+suppressMessages(loadPackages("etc/PACKAGES"))
+sink()
+sourceFunctions("src/R/app")
+load("pub/main.RData")
+```
+
+Sidebar {.sidebar}
+==========
+
+```{r, child = "src/Rmd/sidebar.Rmd"}
+```
+
+Home {data-icon=fa-home}
+=========
+
+```{r, child = "src/Rmd/home.Rmd"}
+```
+
+Info {data-icon=fa-info-circle}
+=========
+
+```{r, child = "src/Rmd/info.Rmd"}
+```

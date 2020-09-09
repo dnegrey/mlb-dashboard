@@ -1,0 +1,26 @@
+<p id="appTitle">MLB Dashboard</p>
+
+<p id="appVersion">version `r gitVersion()`</p>
+
+----------
+
+Application last refreshed:
+
+```{r}
+alr <- file.info("../../success.txt")$mtime
+appLastRefreshed <- paste0(
+    format(alr, "%B"), " ",
+    as.integer(format(alr, "%d")), ", ",
+    format(alr, "%Y"), " @ ",
+    trimws(format(alr, "%l:%M:%S %p"))
+)
+rm(alr)
+```
+
+<p id="lastRefreshDate">`r appLastRefreshed`</p>
+
+----------
+
+Visit the [info page](#section-info) to learn more about the data and assumptions as well as helpful tips for using this application.
+
+----------

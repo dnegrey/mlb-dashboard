@@ -1,3 +1,3 @@
 ## `./data/`
 
-Folder to store data created by the project
+*Use to store temporary data files*
