@@ -54,6 +54,9 @@ sidebar
     background-color: #2B3E50;
     border-right: 1px solid #2B3E50;
 }
+#section-sidebar .chart-title {
+    display: none;
+}
 #section-sidebar p:not(#appTitle) {
     font-size: small;
 }
@@ -170,4 +173,30 @@ app specific
 }
 .shiny-input-container .control-label {
     text-decoration: underline;
+}
+
+/* home */
+.leagueResultDT-header {
+    font-weight: bold;
+}
+#standingsByYear_AL caption,
+#standingsByYear_NL caption {
+    font-size: small;
+}
+#standingsByYear_ChampionWS {
+    font-weight: bold;
+    margin-left: 20px;
+    margin-top: 27px;
+}
+#standingsByYear_WonWS {
+    color: #D9534F;
+}
+#standingsByYear_ChampionAL,
+#standingsByYear_ChampionNL {
+    color: #777777;
+}
+#standingsByYear_WonAL,
+#standingsByYear_WonNL {
+    font-weight: bold;
+    color: #2B3E50;
 }

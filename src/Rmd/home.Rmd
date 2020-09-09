@@ -1,21 +1,78 @@
+Row {data-height=50}
+----------
+
+```{r}
+selectInput(
+    inputId = "standingsByYear_Season",
+    label = "Select Season",
+    choices = rev(names(main$result))
+)
+```
+
+```{r}
+standingsByYear_Result <- eventReactive(
+    eventExpr = c(
+        input$standingsByYear_Season
+    ),
+    valueExpr = {
+        xs <- input$standingsByYear_Season
+        x <- main$result[[xs]]
+        y <- seasonResultClean(x)
+        return(y)
+    }
+)
+standingsByYear_Won <- eventReactive(
+    eventExpr = c(
+        standingsByYear_Result()
+    ),
+    valueExpr = {
+        x <- standingsByYear_Result()
+        y <- list(
+            al = x$wonAL,
+            nl = x$wonNL,
+            ws = x$wonWS
+        )
+        return(y)
+    }
+)
+output$standingsByYear_WonAL <- renderText(
+    standingsByYear_Won()$al
+)
+output$standingsByYear_WonNL <- renderText(
+    standingsByYear_Won()$nl
+)
+output$standingsByYear_WonWS <- renderText(
+    standingsByYear_Won()$ws
+)
+```
+
+`r  h3(id = "standingsByYear_ChampionWS", "World Series Champion: ", textOutput("standingsByYear_WonWS", inline = TRUE))`
+
 Row
 ----------
 
-### Superhero Default Blue {.superHeroDefaultBlue}
+### American League
 
-### Superhero Primary Orange {.superHeroPrimaryOrange}
+`r  h4(id = "standingsByYear_ChampionAL", "Champion: ", textOutput("standingsByYear_WonAL", inline = TRUE))`
 
-### Superhero Secondary Gray {.superHeroSecondaryGray}
+```{r}
+output$standingsByYear_AL <- renderDT(
+    leagueResultDT(standingsByYear_Result()$AL)
+)
+DTOutput(
+    outputId = "standingsByYear_AL"
+)
+```
 
-### Superhero Success Green {.superHeroSuccessGreen}
+### National League
 
-Row
-----------
+`r  h4(id = "standingsByYear_ChampionNL", "Champion: ", textOutput("standingsByYear_WonNL", inline = TRUE))`
 
-### Superhero Danger Red {.superHeroDangerRed}
-
-### Superhero Warning Orange {.superHeroWarningOrange}
-
-### Superhero Info Blue {.superHeroInfoBlue}
-
-### Superhero Light Gray {.superHeroLightGray}
+```{r}
+output$standingsByYear_NL <- renderDT(
+    leagueResultDT(standingsByYear_Result()$NL)
+)
+DTOutput(
+    outputId = "standingsByYear_NL"
+)
+```
