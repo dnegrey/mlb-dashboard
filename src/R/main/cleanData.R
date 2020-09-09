@@ -1,13 +1,11 @@
 cleanData <- function(dir) {
-    
     # years
     RDataCreate(
         dir = dir,
-        x = "years",
+        x = "year",
         fun = teamsYearSplit,
         args = list(
-            teams = RDataUse(dir, "teams")
+            teams = RDataUse(dir, "team")
         )
     )
-    
 }

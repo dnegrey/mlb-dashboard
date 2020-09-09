@@ -1,0 +1,20 @@
+### Information
+
+<h3>Background</h3>
+
+This application is designed to ...
+
+<h3>Getting Started</h3>
+
+The [Home](#section-home) page provides ...
+
+<h3>Support</h3>
+
+* <span class="fa fa-github-square"></span><a href="https://github.com/dnegrey/ShinyApp_Template" target="_blank">Source Code</a>
+* <span class="fa fa-envelope"></span><a href="mailto:dnegrey@gmail.com">Email</a>
+
+<br>
+
+----------
+
+<div style="height: 20px;"></div>

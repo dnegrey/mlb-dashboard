@@ -1,24 +1,21 @@
 analyzeData <- function(dir) {
-    
     # year results
     RDataCreate(
         dir = dir,
-        x = "results",
+        x = "result",
         fun = lapply,
         args = list(
-            X = RDataUse(dir, "years"),
+            X = RDataUse(dir, "year"),
             FUN = yearResults
         )
     )
-    
-    # main app object
+    # main data object
     RDataCreate(
         dir = dir,
         x = "main",
         fun = list,
         args = list(
-            results = RDataUse(dir, "results")
+            result = RDataUse(dir, "result")
         )
     )
-    
 }

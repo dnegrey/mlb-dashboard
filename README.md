@@ -1,5 +1,7 @@
 # mlbDashboard
 
-*version 1.0.3*
+*Shiny application for Major League Baseball insights*
 
-Shiny dashboard with Major League Baseball data
+**version 1.0.3**
+
+----------

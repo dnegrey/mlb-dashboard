@@ -1,0 +1,173 @@
+/*
+import Open Sans font from Google (closest to Verdana)
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans');
+
+/*
+global
+*/
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #EAEAEA;
+}
+
+/*
+navbar
+*/
+
+.navbar {
+    background-color: #4E5D6C;
+    border-bottom: 1px solid #4E5D6C;
+}
+.navbar-logo {
+    height: 40px;
+    margin-top: 3px;
+}
+.navbar-brand {
+    font-size: 18px;
+    width: 180px;
+    margin-right: 26px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.navbar-inverse .navbar-brand,
+.navbar-inverse .navbar-brand:hover {
+    color: #FFFFFF;
+}
+.navbar-inverse .navbar-nav > li > a {
+    color: #ABB6C2;
+}
+.navbar-inverse .navbar-nav>.active>a,
+.navbar-inverse .navbar-nav>.active>a:focus {
+    background-color: #ABB6C2;
+    color: #000000;
+    color: rgba(0, 0, 0, 0.9);
+}
+
+/*
+sidebar
+*/
+
+#section-sidebar {
+    background-color: #2B3E50;
+    border-right: 1px solid #2B3E50;
+}
+#section-sidebar p:not(#appTitle) {
+    font-size: small;
+}
+#section-sidebar p:not(#appTitle):not(#appVersion) {
+    color: #FFFFFF;
+    color: rgba(255, 255, 255, 0.5);
+}
+#section-sidebar p:nth-of-type(3) {
+    margin-bottom: 2px;
+}
+#section-sidebar a {
+    color: #DF691A;
+}
+#appTitle {
+    color: #FFFFFF;
+    text-align: center;
+    margin-bottom: 5px;
+}
+#appVersion {
+    text-align: center;
+    color: #5BC0DE;
+}
+
+/*
+info page
+*/
+
+#section-info a {
+    color: #1A90DF;
+}
+#section-info a:hover {
+    color: #DF691A;
+}
+#section-information .chart-stage {
+    overflow: auto;
+}
+#section-information h3:first-of-type {
+    margin-top: 10px;
+}
+#section-info ul .fa {
+    margin-right: 5px;
+}
+
+/*
+general use
+*/
+
+.noshow {
+    visibility: hidden;
+}
+.dataTables_wrapper .dataTables_scroll .dataTables_scrollBody:not(:hover) {
+    overflow: hidden !important;
+}
+.plotly * {
+    font-family: 'Montserrat', Arial, sans-serif !important;
+}
+.plotly .legend .bg {
+    fill: transparent !important;
+}
+
+/* superhero charts */
+.superHeroDefaultBlue {
+    background-color: #2B3E50;
+}
+.superHeroPrimaryOrange {
+    background-color: #DF691A;
+}
+.superHeroSecondaryGray {
+    background-color: #4E5D6C;
+}
+.superHeroSuccessGreen {
+    background-color: #5CB85C;
+}
+.superHeroDangerRed {
+    background-color: #D9534F;
+}
+.superHeroWarningOrange {
+    background-color: #F0AD4E;
+}
+.superHeroInfoBlue {
+    background-color: #5BC0DE;
+}
+.superHeroLightGray {
+    background-color: #ABB6C2;
+}
+.superHeroDefaultBlue .chart-title,
+.superHeroPrimaryOrange .chart-title,
+.superHeroSuccessGreen .chart-title,
+.superHeroDangerRed .chart-title,
+.superHeroWarningOrange .chart-title,
+.superHeroInfoBlue .chart-title {
+    color: #FFFFFF;
+}
+.superHeroSecondaryGray .chart-title {
+    color: #ABB6C2;
+}
+.superHeroLightGray .chart-title {
+    color: #000000;
+    color: rgba(0, 0, 0, 0.9);
+}
+
+/*
+app specific
+*/
+
+/* general */
+.shiny-output-error,
+.js-plotly-plot .plotly,
+.js-plotly-plot .plotly div {
+    min-width: 100%;
+}
+.shiny-flow-layout > div {
+    width: 100%;
+}
+.shiny-input-container .control-label {
+    text-decoration: underline;
+}
