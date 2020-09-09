@@ -1,7 +1,0 @@
-#!/usr/bin/env bash
-
-# remove data from last run
-rm data/*.RData
-
-# refresh app data
-R CMD BATCH --vanilla main.R

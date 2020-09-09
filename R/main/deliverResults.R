@@ -1,2 +1,0 @@
-deliverResults <- function(dir) {
-}
