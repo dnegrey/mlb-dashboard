@@ -7,6 +7,12 @@ output:
         css: www/styles.css
         logo: www/dan-icon.png
         favicon: www/dan-icon.png
+        navbar:
+            - {icon: "fa-globe", href: "https://dnegrey.com", target: "_blank"}
+            - {icon: "fa-linkedin", href: "https://www.linkedin.com/in/dnegrey", target: "_blank"}
+            - {icon: "fa-github", href: "https://github.com/dnegrey", target: "_blank"}
+            - {icon: "fa-twitter", href: "https://twitter.com/negreydan", target: "_blank"}
+            - {icon: "fa-envelope", href: "mailto:dnegrey@gmail.com"}
 runtime: shiny
 ---
 
