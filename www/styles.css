@@ -111,7 +111,7 @@ general use
     overflow: hidden !important;
 }
 .plotly * {
-    font-family: 'Montserrat', Arial, sans-serif !important;
+    font-family: 'Open Sans', sans-serif !important;
 }
 .plotly .legend .bg {
     fill: transparent !important;
