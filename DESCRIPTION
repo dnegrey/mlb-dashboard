@@ -7,4 +7,5 @@ Imports:
   flexdashboard (>= 0.6.2),
   Lahman (>= 11.0-0),
   rmarkdown (>= 2.25),
+  rsconnect (>= 1.2.1),
   shiny (>= 1.8.0)
