@@ -2,6 +2,6 @@
 
 *Shiny application for Major League Baseball insights*
 
-**version 1.1.2**
+**version 1.2.0**
 
 ----------
