@@ -17,29 +17,31 @@ runtime: shiny
 ---
 
 ```{r global, include=FALSE}
-source("src/R/util/sourceFunctions.R")
-sourceFunctions("src/R/util")
-sink(file = "/dev/null")
-suppressMessages(loadPackages("etc/PACKAGES"))
-sink()
-sourceFunctions("src/R/app")
-load("pub/main.RData")
+library(dplyr)
+library(shiny)
+library(rmarkdown)
+library(flexdashboard)
+library(DT)
+source("R/util/sourceFunctions.R")
+sourceFunctions("R/util")
+sourceFunctions("R/app")
+main <- readRDS("main.rds")
 ```
 
 Sidebar {.sidebar}
 ==========
 
-```{r, child = "src/Rmd/sidebar.Rmd"}
+```{r, child = "Rmd/sidebar.Rmd"}
 ```
 
 Home {data-icon=fa-home}
 =========
 
-```{r, child = "src/Rmd/home.Rmd"}
+```{r, child = "Rmd/home.Rmd"}
 ```
 
 Info {data-icon=fa-info-circle}
 =========
 
-```{r, child = "src/Rmd/info.Rmd"}
+```{r, child = "Rmd/info.Rmd"}
 ```

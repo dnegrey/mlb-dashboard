@@ -1,4 +1,4 @@
-standings <- function(x) {
+calculate_standings <- function(x) {
     x <- x %>% 
         mutate(PCT = W/G) %>% 
         select(Rank, Team = name, W, L, PCT, DivWin, WCWin) %>% 

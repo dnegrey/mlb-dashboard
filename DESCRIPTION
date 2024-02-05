@@ -1,0 +1,10 @@
+Type: Project
+Title: MLB Dashboard
+Description: Shiny application for Major League Baseball insights.
+Imports:
+  dplyr (>= 1.1.4),
+  DT (>= 0.31),
+  flexdashboard (>= 0.6.2),
+  Lahman (>= 11.0-0),
+  rmarkdown (>= 2.25),
+  shiny (>= 1.8.0)

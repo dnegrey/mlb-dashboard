@@ -7,7 +7,7 @@
 Application last refreshed:
 
 ```{r}
-alr <- file.info("../../success.txt")$mtime
+alr <- file.info("../success.txt")$mtime
 appLastRefreshed <- paste0(
     format(alr, "%B"), " ",
     as.integer(format(alr, "%d")), ", ",
@@ -21,6 +21,6 @@ rm(alr)
 
 ----------
 
-Visit the [info page](#section-info) to learn more about the data and assumptions as well as helpful tips for using this application.
+Visit the [info page](#info) to learn more about the data and assumptions as well as helpful tips for using this application.
 
 ----------

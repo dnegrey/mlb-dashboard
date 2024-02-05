@@ -6,7 +6,7 @@ This application is designed to provide insights around Major League Baseball. I
 
 <h3>Getting Started</h3>
 
-The [Home](#section-home) page provides final league standings by year.
+The [Home](#home) page provides final league standings by year.
 
 <h3>Support</h3>
 
