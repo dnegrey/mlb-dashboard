@@ -10,7 +10,7 @@ The [Home](#home) page provides final league standings by year.
 
 <h3>Support</h3>
 
-* <span class="fa fa-github-square"></span><a href="https://github.com/dnegrey/mlbDashboard" target="_blank">Source Code</a>
+* <span class="fa fa-github-square"></span><a href="https://github.com/dnegrey/mlb-dashboard" target="_blank">Source Code</a>
 * <span class="fa fa-envelope"></span><a href="mailto:dnegrey@gmail.com">Email</a>
 
 <br>

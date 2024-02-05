@@ -1,4 +1,4 @@
-# mlbDashboard
+# mlb-dashboard
 
 *Shiny application for Major League Baseball insights*
 
